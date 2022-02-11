@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: Í¬²½ÉÏÓÎ²Ö¿â
+name: åŒæ­¥ä¸Šæ¸¸ä»“åº“
 on:
   workflow_dispatch:
   schedule:
@@ -13,11 +13,11 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Í¬²½ÉÏÓÎ²Ö¿â
+      - name: åŒæ­¥ä¸Šæ¸¸ä»“åº“
         uses: repo-sync/github-sync@v2
         with:
-         # Ìæ»»³ÉĞèÒªÍ¬²½µÄÓÃ»§Ãû£¬²Ö¿âÃû£¬·ÖÖ§Ãû¡£
-          source_repo: ""
+         # æ›¿æ¢æˆéœ€è¦åŒæ­¥çš„ç”¨æˆ·åï¼Œä»“åº“åï¼Œåˆ†æ”¯åã€‚
+          source_repo: "https://github.com/KingRan/KR.git"
           source_branch: "main"
           destination_branch: "main"
           sync_tags: "true"
